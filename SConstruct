@@ -16,8 +16,8 @@ env = SConscript("godot-cpp/SConstruct")
 env.Append(CPPPATH=["src/"])
 sources = Glob("src/*.cpp")
 
-#link user32.h for MessageBoxA
-# env.Append(LIBS=["user32"])
+# link user32.h for MessageBoxA
+env.Append(LIBS=["user32"])
 
 # link sunvox library
 # env.Append(IMPLIBSUFFIX=".dll")
